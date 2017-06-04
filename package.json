@@ -1,0 +1,30 @@
+{
+  "name": "react-ready",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "tsc --init",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "typings": "lib/index",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@types/node": "^7.0.27",
+    "@types/prop-types": "^15.5.1",
+    "@types/react": "^15.0.25",
+    "@types/react-dom": "^15.5.0",
+    "typescript": "^2.3.3"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
