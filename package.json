@@ -1,25 +1,31 @@
 {
   "name": "react-ready",
   "version": "1.0.0",
-  "description": "",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "tsc --init",
-    "build": "tsc"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "server side rendering of asynchronously 'ready' component",
+  "keywords": ["react", "async", "isomorphic", "server-side", "rendering"],
+  "author": "Thomas CHARLAT <>",
   "license": "ISC",
-  "typings": "lib/index",
-  "files": [
-    "lib"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kallikrein/react-ready.git"
+  },
+  "homepage": "https://github.com/Kallikrein/react-ready.git",
+  "bugs": "https://github.com/Kallikrein/react-ready/issues/new",
+  "main": "lib/index.js",
+  "jsnext:main": "es/index.js",
+  "scripts": {
+    "clean": "rimraf lib es",
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "start": "npm run clean && npm test && npm run build:commonjs && npm run build:es6",
+    "build:commonjs": "tsc",
+    "build:es6": "tsc -p tsconfig.es6.json"
+  },
   "devDependencies": {
     "@types/node": "^7.0.27",
     "@types/prop-types": "^15.5.1",
     "@types/react": "^15.0.25",
     "@types/react-dom": "^15.5.0",
+    "rimraf": "^2.6.1",
     "typescript": "^2.3.3"
   },
   "dependencies": {
